@@ -1,0 +1,41 @@
+body{
+  padding: 25px;
+  background-color:#FFE099;
+}
+.title {
+	color: #5C6AC4;
+}
+
+.image {
+  width:320px;
+  height:220px;
+  float:center;
+}
+
+.aim {
+  padding-block:80px;
+}
+
+.menu {
+  padding: 10px;
+  background-color:#E6D9B3;
+}
+
+h1 {
+  text-align:center;
+}
+
+.image-card{
+  text-align:center;
+  width: 200px;
+  margin:40px;
+}
+
+.cat-text {
+  color:#E37C30;
+  
+}
+
+
+
+
