@@ -13,7 +13,7 @@
     <a class="menu" href="photos.html">Photos</a>
 <a class="menu" href="drawing.html">Drawing</a>
     </div>
-<canvas id="board" width="400" height="300" style="border:1px solid black;"></canvas>
+<canvas id="board" width="350" height="400" style="border:1px solid black;"></canvas>
 
 <script>
 let canvas = document.getElementById("board");
@@ -21,20 +21,39 @@ let ctx = canvas.getContext("2d");
 
 let drawing = false;
 
-canvas.onmousedown = () => drawing = true;
-canvas.onmouseup = () => drawing = false;
-
-canvas.onmousemove = function(e){
-    if(!drawing) return;
-
-    ctx.lineWidth = 3;
-    ctx.lineCap = "round";
-
-    ctx.lineTo(e.offsetX, e.offsetY);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(e.offsetX, e.offsetY);
+function start(e){
+  drawing = true;
+  draw(e);
 }
+
+function end(){
+  drawing = false;
+  ctx.beginPath();
+}
+
+function draw(e){
+  if(!drawing) return;
+
+  let rect = canvas.getBoundingClientRect();
+  let x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+  let y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
+
+  ctx.lineWidth = 4;
+  ctx.lineCap = "round";
+
+  ctx.lineTo(x,y);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(x,y);
+}
+
+canvas.addEventListener("mousedown", start);
+canvas.addEventListener("mouseup", end);
+canvas.addEventListener("mousemove", draw);
+
+canvas.addEventListener("touchstart", start);
+canvas.addEventListener("touchend", end);
+canvas.addEventListener("touchmove", draw);
 </script>
 
   </body>
