@@ -14,9 +14,19 @@
 <a class="menu" href="drawing.html">Drawing</a>
     </div>
 <input type="color" id="color">
+<button onclick="saveDrawing()">Save Drawing</button>
 <canvas id="board" width="350" height="400" style="border:1px solid black;"></canvas>
 
 <script>
+function saveDrawing(){
+  let canvas = document.getElementById("board");
+  let link = document.createElement("a");
+
+  link.download = "drawing.png";
+  link.href = canvas.toDataURL();
+
+  link.click();
+}
 let colorPicker = document.getElementById("color");
 
 colorPicker.addEventListener("input", function(){
