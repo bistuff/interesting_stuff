@@ -13,5 +13,29 @@
     <a class="menu" href="photos.html">Photos</a>
 <a class="menu" href="drawing.html">Drawing</a>
     </div>
+<canvas id="board" width="400" height="300" style="border:1px solid black;"></canvas>
+
+<script>
+let canvas = document.getElementById("board");
+let ctx = canvas.getContext("2d");
+
+let drawing = false;
+
+canvas.onmousedown = () => drawing = true;
+canvas.onmouseup = () => drawing = false;
+
+canvas.onmousemove = function(e){
+    if(!drawing) return;
+
+    ctx.lineWidth = 3;
+    ctx.lineCap = "round";
+
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(e.offsetX, e.offsetY);
+}
+</script>
+
   </body>
 </html>
