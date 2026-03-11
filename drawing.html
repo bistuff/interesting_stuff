@@ -13,9 +13,15 @@
     <a class="menu" href="photos.html">Photos</a>
 <a class="menu" href="drawing.html">Drawing</a>
     </div>
+<input type="color" id="color">
 <canvas id="board" width="350" height="400" style="border:1px solid black;"></canvas>
 
 <script>
+let colorPicker = document.getElementById("color");
+
+colorPicker.addEventListener("input", function(){
+  ctx.strokeStyle = this.value;
+});
 let canvas = document.getElementById("board");
 let ctx = canvas.getContext("2d");
 
