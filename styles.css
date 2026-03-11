@@ -6,12 +6,17 @@ body{
 	color: #5C6AC4;
 }
 
-.image {
+.image-card{
+  text-align:center;
+  width:320px;
+  margin:auto;
+}
+
+.image{
   display:block;
   width:320px;
   height:220px;
   margin:auto;
-  float:right;
 }
 
 .aim {
@@ -27,9 +32,6 @@ h1 {
   text-align:center;
 }
 
-.image-card{
-  text-align:center;
-}
 
 .cat-text {
   color:#E37C30;
