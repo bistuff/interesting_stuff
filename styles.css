@@ -1,6 +1,10 @@
 body{
   padding: 25px;
   background-color:#FFE099;
+  border:1px solid #333;
+  box-sizing: border-box;
+}
+
 }
 .title {
 	color: #5C6AC4;
@@ -61,7 +65,3 @@ button {
 
 
 
-* {
-   border:1px solid #333;
-box-sizing: border-box;
-}
