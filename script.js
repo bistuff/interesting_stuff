@@ -18,8 +18,8 @@ document.getElementById("paris").textContent =
 now.toLocaleTimeString("en-GB",{timeZone:"Europe/Paris"});
 }
 
-document.getElementById("arizona").textContent =
-now.toLocaleTimeString("en-GB",{timeZone:"America/Arizona"});
+document.getElementById("california").textContent =
+now.toLocaleTimeString("en-GB",{timeZone:"America/California"});
 
 setInterval(updateClocks,1000);
 updateClocks();
