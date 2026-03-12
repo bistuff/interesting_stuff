@@ -63,6 +63,6 @@ button {
 
 * {
     border: 1px solid #333; /* border for every element */
-    box-sizing: border-box;  /* ensures padding doesn't break layout */
+    
 }
 
