@@ -19,7 +19,7 @@ now.toLocaleTimeString("en-GB",{timeZone:"Europe/Paris"});
 }
 
 document.getElementById("california").textContent =
-now.toLocaleTimeString("en-GB",{timeZone:"America/California"});
+now.toLocaleTimeString("en-GB",{timeZone:"America/Los_Angeles"});
 
 setInterval(updateClocks,1000);
 updateClocks();
