@@ -52,7 +52,16 @@ text-align:center;
 
 
 button {
-   text-size:25px;
+   width: 70px;      /* bigger width */
+    height: 70px;     /* bigger height */
+    font-size: 24px;  /* bigger text */
+    margin: 4px;      /* spacing between buttons */
+    border-radius: 8px; /* optional: rounded corners */
 }
 
 
+
+* {
+   border:1px solid #333;
+box-sizing: border-box;
+}
