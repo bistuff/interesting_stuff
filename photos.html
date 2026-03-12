@@ -44,15 +44,15 @@
 
 
 <h1>Random Image Feed (every 2 seconds)</h1>
-<img id="randomPhoto" src="" style="height:auto; width:auto;" alt="Random Image" />
+<img id="randomPhoto" src="" alt="Random Image" />
 
 <script>
 const photoElement = document.getElementById("randomPhoto");
 
 function showRandomPhoto() {
     // picsum.photos random image URL
-    const width = 600;
-    const height = 400;
+    const width = auto;
+    const height = auto;
     const url = `https://picsum.photos/${width}/${height}?random=${Math.floor(Math.random()*1000)}`;
     photoElement.src = url;
 }
