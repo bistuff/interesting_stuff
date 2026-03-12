@@ -1,8 +1,6 @@
 body{
   padding: 25px;
   background-color:#FFE099;
-  border:1px solid #333;
-  box-sizing: border-box;
 }
 
 }
@@ -63,5 +61,8 @@ button {
     border-radius: 8px; /* optional: rounded corners */
 }
 
-
+* {
+    border: 1px solid #333; /* border for every element */
+    box-sizing: border-box;  /* ensures padding doesn't break layout */
+}
 
