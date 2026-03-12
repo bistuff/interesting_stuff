@@ -51,10 +51,11 @@ const photoElement = document.getElementById("randomPhoto");
 
 function showRandomPhoto() {
     // picsum.photos random image URL
-    const width = 400;
+    const width = 350;
     const height = 400;
     const url = `https://picsum.photos/${width}/${height}?random=${Math.floor(Math.random()*1000)}`;
     photoElement.src = url;
+float=center;
 }
 
 // Update image every 2 seconds
