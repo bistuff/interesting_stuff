@@ -51,8 +51,8 @@ const photoElement = document.getElementById("randomPhoto");
 
 function showRandomPhoto() {
     // picsum.photos random image URL
-    const width = auto;
-    const height = auto;
+    const width = 250px;
+    const height = 400px;
     const url = `https://picsum.photos/${width}/${height}?random=${Math.floor(Math.random()*1000)}`;
     photoElement.src = url;
 }
