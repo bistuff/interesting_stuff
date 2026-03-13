@@ -27,7 +27,7 @@ body{
 
 .menu {
   padding: 10px;
-  background-color:#E6D9B3;
+  
 }
 
 h1 {
@@ -72,7 +72,14 @@ body {
     border: 1px solid #333;
 }
 
-disp{
+.disp{
 padding:10px;
+
+}
+
+.menublock {
+   padding:10px;
+   border:2px solid #FFFFFF;
+   box-sizing:border-box;
 
 }
