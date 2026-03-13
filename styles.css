@@ -78,9 +78,9 @@ padding:10px;
 }
 
 .menublock {
-   padding:10px;
+   padding:auto;
    border:2px solid #000;
    box-sizing:border-box;
-   
+   margin:auto;
 
 }
