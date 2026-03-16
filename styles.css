@@ -28,6 +28,9 @@ body{
 .menu {
   padding: 10px;
   background-color:#787462;
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 10px; 
 }
 
 h1 {
