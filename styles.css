@@ -1,6 +1,6 @@
 body{
   padding: 25px;
-  background-image:bg.jpg;
+  background-image:url('bg.jpg');
 }
 
 }
